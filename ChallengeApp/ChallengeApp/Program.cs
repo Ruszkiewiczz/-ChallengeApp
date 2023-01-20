@@ -23,11 +23,11 @@ names.Add("Olaf");
 names.Add("Jola");
 names.Add("Michal");
 
-var Adam  = 0;
-var Michal = 0;
-var Jola = 0;
-var Olaf = 0;
-var Monika = 0;
+var AdamCount = 0;
+var MichalCount = 0;
+var JolaCount = 0;
+var OlafCount = 0;
+var MonikaCount = 0;
 
 for (var i=0; i<names.Count; i++)
 {
@@ -38,41 +38,34 @@ for (var i=0; i<names.Count; i++)
 
 
 for (var i = 0; i < names.Count; i++)
-
+{
     if (names[i] == "Adam")
-        Adam++;
     {
-        Console.WriteLine($"Adam:   " + Adam);
+        AdamCount++;
     }
 
-for (var i = 0; i < names.Count; i++)
-
-    if (names[i] == "Michal")
-        Michal++;
+    else if (names[i] == "Michal")
     {
-        Console.WriteLine($"Michal: " + Michal);
+        MichalCount++;
     }
 
-for (var i = 0; i < names.Count; i++)
-
-    if (names[i] == "Jola")
-        Jola++;
+    else if (names[i] == "Jola")
     {
-        Console.WriteLine($"Jola:   " + Jola);
+        JolaCount++;
     }
 
-for (var i = 0; i < names.Count; i++)
-
-    if (names[i] == "Olaf")
-        Olaf++;
+    else if (names[i] == "Olaf")
     {
-        Console.WriteLine($"Olaf:   " + Olaf);
+        OlafCount++;
     }
+    else if (names[i] == "Monika")
+    { 
+        MonikaCount++;
+    }    
+}
 
-for (var i = 0; i < names.Count; i++)
-
-    if (names[i] == "Monika")
-        Monika++;
-    {
-        Console.WriteLine($"Monika: " + Monika);
-    }
+Console.WriteLine("Adam:   " + AdamCount);
+Console.WriteLine("Michal: " + MichalCount);
+Console.WriteLine("Jola:   " + JolaCount);
+Console.WriteLine("Olaf:   " + OlafCount);
+Console.WriteLine("Monika: " + MonikaCount);
